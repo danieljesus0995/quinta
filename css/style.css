@@ -1,0 +1,160 @@
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}*/
+
+
+
+
+body{
+	min-width:400px;
+	width: auto !important;
+	margin: 0px;
+	background-color: #FDF3E7;
+
+	line-height: 1;
+}
+div img{
+	width: 100%;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.navbar h1{
+	position: absolute;
+	text-align:center;
+	width: 100%;
+	font-size: 400%;
+	color: #FDF3E7;
+	animation: fadein 3s;
+}
+/*#C63D0F
+#3B3738
+#FDF3E7
+#7E8F7C*/
+.navbar #ch{
+	width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    bottom: 85px;
+}
+.navbar #ch a{
+	font-size: 150%;
+}
+ul {
+	text-align:center; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3B3738;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #C63D0F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #7E8F7C;
+}
+
+@media screen and (max-width: 700px){
+li a{
+	padding: 50px 50px;
+}
+.navbar #ch{
+	bottom: 0;
+}
+.navbar #ch li{
+	width: 50%;
+}
+.navbar #ch li:after {
+  content: "";
+  display: block;
+  /*padding-bottom: 100%;*/
+}
+}
+
+#anchors div{
+	width: 100%;
+	background-color: grey;
+	margin:0px;
+}
+#anchors div:nth-child(3){/* Os Nossos Vinhos */
+	background-image: url("../images/vinho2.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	height: 20em;
+}
+#anchors div:nth-child(3) h1{/* Os Nossos Vinhos */
+	text-align: center;
+	position: relative;
+}
+#anchors div:nth-child(3) p{/* Os Nossos Vinhos */
+	text-align: center;
+	position: relative;
+    top: 5%;
+    font-weight: bolder;
+    font-size: 1.7em;
+    color: cornsilk;
+}
+#anchors div:nth-child(4){/* A Nossa Quinta */
+	background-image: url("../images/quinta.jpg");
+	background-repeat: no-repeat;
+	/*background-blend-mode: soft-light;*/
+	background-size: cover;
+	height: 20em;
+}
+#anchors div h1{
+color:white;
+width: 100%;
+font-size: 2.7em;
+text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#anchors div a{
+
+}
+#cont{
+	background-color: #d1a8a8 !important;
+	padding-bottom: 20px;
+}
+#cont p{
+	    font-family: fantasy;
+	        font-size: 120%;
+    color: firebrick;
+    padding-left: 5%;
+}
+#footer {
+    position: relative;
+    /*bottom: 0px;*/
+	color:white;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+}

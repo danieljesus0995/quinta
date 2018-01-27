@@ -1,0 +1,143 @@
+
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+body {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1240px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f6f6f6;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 300;
+	flex: 1;
+}
+
+h5 {
+	font-weight: 500;
+	line-height: 1.7em;
+}
+
+h6 {
+	color: #666;
+	font-size: 14px;
+}
+
+label {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+.winelist {
+	display: block;
+}
+
+.product-card {
+	float:left;
+	padding: 2%;
+	background-color: #FFF;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.product-info {
+	margin-top: auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+@media ( max-width: 2500px ) {
+	
+	.product-card {
+    width:16%;
+	}
+}
+@media ( max-width: 920px ) {
+	.product-card {
+    width:21%;
+	}
+}
+@media ( max-width: 600px ) {
+	.product-card {
+    width:46%;
+	}
+}
+@media ( max-width: 480px ) {
+	h1 {
+		margin-bottom: 20px;
+	}
+}
+
+
+.pagination {
+    display: inline-block;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    /*transition: background-color .3s;*/
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    color: white;
+    animation-name: rgb;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes rgb {
+    0%   {background-color:red;}
+    25%  {background-color:gray;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
